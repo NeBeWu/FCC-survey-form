@@ -35,7 +35,7 @@ body::before {
       rgba(38, 138, 38, 0.9),
       rgba(138, 238, 138, 0.85)
     ),
-    url(/images/math-chalkboard.jpg);
+    url(https://raw.githubusercontent.com/NeBeWu/FCC-survey-form/main/images/math-chalkboard.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
