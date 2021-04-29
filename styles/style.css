@@ -1,0 +1,225 @@
+/* Mobile-portrait */
+
+/********** Root **********/
+:root {
+  --color-darkgreen: rgba(27, 50, 27);
+  --color-darkgreen-alpha: rgba(27, 50, 27, 0.6);
+  --color-purple: rgb(110, 60, 190);
+}
+
+html {
+  font-size: 1vw;
+}
+
+/********** Body **********/
+body {
+  margin: 0;
+  font-family: "Computer Modern Serif", sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: whitesmoke;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkgreen);
+  background-image: linear-gradient(
+      90deg,
+      rgba(38, 138, 38, 0.9),
+      rgba(138, 238, 138, 0.85)
+    ),
+    url(/images/math-chalkboard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/********** Navigation Bar **********/
+
+/********** Header **********/
+header {
+  margin: 13rem 3rem;
+  text-align: center;
+}
+
+#title {
+  margin: 2.5rem 0;
+  font-size: 10rem;
+  font-weight: 400;
+}
+
+#description {
+  margin: 2.5rem 0;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 6rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/********** Main **********/
+main {
+  padding: 10rem 3rem;
+  background: var(--color-darkgreen-alpha);
+  border-radius: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6rem;
+}
+
+.form-question {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  font-size: 6rem;
+}
+
+.form-input {
+  display: block;
+  height: 7rem;
+  padding: 2rem;
+  color: rgb(80, 80, 80);
+  background-clip: padding-box;
+  border: 1px solid rgba(57, 80, 57);
+  border-radius: 1rem;
+}
+
+.radio-text,
+.checkbox-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.input-radio,
+.input-checkbox {
+  margin-right: 2rem;
+}
+
+.input-textarea {
+  min-height: 28rem;
+  padding: 2rem;
+  resize: vertical;
+}
+
+#dropdown {
+  height: 11rem;
+}
+
+#submit {
+  display: block;
+  padding: 4rem;
+  background: var(--color-purple);
+  color: inherit;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/********** Footer **********/
+
+/********** Medias **********/
+
+/* Mobile-landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /********** Root **********/
+  html {
+    font-size: 0.6vw;
+  }
+
+  /********** Body **********/
+
+  /********** Navigation Bar **********/
+
+  /********** Header **********/
+
+  /********** Main **********/
+  main {
+    margin: 0 10rem;
+    padding: 10rem 15rem;
+  }
+
+  /********** Footer **********/
+}
+
+/* Tablet-portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /********** Root **********/
+  html {
+    font-size: 0.6vw;
+  }
+
+  /********** Body **********/
+
+  /********** Navigation Bar **********/
+
+  /********** Header **********/
+
+  /********** Main **********/
+  main {
+    margin: 0 10rem;
+    padding: 10rem 15rem;
+  }
+
+  /********** Footer **********/
+}
+
+/* Tablet-landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /********** Root **********/
+  html {
+    font-size: 0.3vw;
+  }
+
+  /********** Body **********/
+
+  /********** Navigation Bar **********/
+
+  /********** Header **********/
+
+  /********** Main **********/
+  main {
+    margin: 0 50rem;
+    padding: 10rem 20rem;
+  }
+
+  /********** Footer **********/
+}
+
+/* Laptops and desktops */
+@media only screen and (min-width: 1200px) {
+  /********** Root **********/
+  html {
+    font-size: 0.3vw;
+  }
+
+  /********** Body **********/
+
+  /********** Navigation Bar **********/
+
+  /********** Header **********/
+
+  /********** Main **********/
+  main {
+    margin: 0 50rem;
+    padding: 10rem 20rem;
+  }
+
+  /********** Footer **********/
+}

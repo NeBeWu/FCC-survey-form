@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="A Survey Form about Math Enthusiasts" />
+    <meta name="author" content="Pedro M. M. de Paula" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Enthusiasts Survey Form</title>
+    <!--link rel="stylesheet" href="styles/reset.css"-->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Computer Modern Serif-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Math Enthusiasts Survey Form</h1>
+      <p id="description">
+        Help us understand a little bit about our community.
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="form-div">
+          <label id="name-label" class="form-question" for="name"
+            >What is your name?</label
+          >
+          <input
+            id="name"
+            class="form-input"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="form-div">
+          <label id="email-label" class="form-question" for="email"
+            >What is your email?</label
+          >
+          <input
+            id="email"
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+        </div>
+        <div class="form-div">
+          <label id="number-label" class="form-question" for="number"
+            >What is your age?</label
+          >
+          <input
+            id="number"
+            class="form-input"
+            type="number"
+            name="age"
+            placeholder="Age"
+            min="0"
+            max="130"
+          />
+        </div>
+        <div class="form-div">
+          <label id="country-label" class="form-question" for="country"
+            >Where are you from?</label
+          >
+          <input
+            id="country"
+            class="form-input"
+            type="text"
+            name="country"
+            placeholder="Country"
+          />
+        </div>
+        <div class="form-div">
+          <p class="form-question">What is your educational level?</p>
+          <select id="dropdown" class="form-input" name="education" required>
+            <option disabled selected value="">Select educational level</option>
+            <option value="primary">Primary Education</option>
+            <option value="secondary">Secondary Education</option>
+            <option value="vocational">Vocational Education</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="doctorate">Doctorate</option>
+          </select>
+        </div>
+        <div class="form-div">
+          <p class="form-question">
+            Which phrase best describes your involvement with mathematics?
+          </p>
+          <label class="radio-text">
+            <input
+              type="radio"
+              class="input-radio"
+              name="involvement"
+              value="0"
+              checked
+            />
+            Math is just a hobby for me.
+          </label>
+          <label class="radio-text">
+            <input
+              type="radio"
+              class="input-radio"
+              name="involvement"
+              value="1"
+            />
+            I study math but my carrer is not directely related to math.
+          </label>
+          <label class="radio-text">
+            <input
+              type="radio"
+              class="input-radio"
+              name="involvement"
+              value="2"
+            />
+            I use math at my work but it is not directely related to math.
+          </label>
+          <label class="radio-text">
+            <input
+              type="radio"
+              class="input-radio"
+              name="involvement"
+              value="3"
+            />
+            I am math undergraduate/graduate student.
+          </label>
+          <label class="radio-text">
+            <input
+              type="radio"
+              class="input-radio"
+              name="involvement"
+              value="4"
+            />
+            I am a math researcher/teacher/divulgator.
+          </label>
+        </div>
+        <div class="form-div">
+          <p class="form-question">
+            Which areas of mathematics are you mostly interested?
+          </p>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="0"
+            />
+            Recreational mathematics
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="1"
+            />
+            History and biography
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="2"
+            />
+            Foundations of mathematics
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="3"
+            />
+            Discrete mathematics
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="4"
+            />
+            Number Theory
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="5"
+            />
+            Algebra
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="6"
+            />
+            Analysis
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="7"
+            />
+            Geometry
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="8"
+            />
+            Topology
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="9"
+            />
+            Probability and statistics
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="10"
+            />
+            Computational sciences
+          </label>
+          <label class="checkbox-text">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="areas"
+              value="11"
+            />
+            Applied mathematics
+          </label>
+        </div>
+        <div class="form-div">
+          <label id="resources-label" class="form-question" for="resources"
+            >What kind of resources do you use to learn mathematics?</label
+          >
+          <input
+            id="resources"
+            class="form-input"
+            type="text"
+            name="resources"
+            placeholder="Books, audios, videos, websites, forums, ..."
+          />
+        </div>
+        <div class="form-div">
+          <p class="form-question">Any suggestions to improve the community?</p>
+          <textarea
+            id="suggestions"
+            class="input-textarea"
+            name="suggestions"
+            placeholder="Enter here any suggestions"
+          ></textarea>
+        </div>
+        <div class="form-div">
+          <button id="submit" class="submit-button" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
